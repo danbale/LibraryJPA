@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="home" extends="DefaultTemplate">
+	  
+	</definition>
+	
+	<definition name="login" extends="DefaultTemplate">	
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/login.jsp" ></put-attribute>
+	  	<put-attribute name="menu" value=""> </put-attribute>
+	</definition>
+	
+	<definition name="userList" extends="DefaultTemplate">	
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/User/List.jsp" ></put-attribute>
+	  		<put-attribute name="menu" value=""> </put-attribute>
+	  	<put-list-attribute name="javascripts" inherit="true">
+	  	<add-attribute value="/resources/styles/js/angular-1.4.8/js/angularUser.js"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="userEdit" extends="DefaultTemplate">
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/User/edit.jsp"></put-attribute>
+	  	<put-attribute name="menu" value=""> </put-attribute>
+	  	<put-list-attribute name="javascripts" inherit="true">
+	  	<add-attribute value="/resources/styles/js/angular-1.4.8/js/angularUser.js"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="createUser" extends="DefaultTemplate">
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/User/create.jsp"></put-attribute>
+	  	<put-attribute name="menu" value=""> </put-attribute>
+	  	<put-list-attribute name="javascripts" inherit="true">
+	  	<add-attribute value="/resources/styles/js/angular-1.4.8/js/angularUser.js"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="bookList" extends="DefaultTemplate">
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/Book/List.jsp"></put-attribute>
+	  	<put-attribute name="menu" value=""> </put-attribute>
+	  	<put-list-attribute name="javascripts" inherit="true">
+	  	<add-attribute value="/resources/styles/js/angular-1.4.8/js/angularBook.js"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="bookEdit" extends="DefaultTemplate">
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/Book/Edit.jsp"></put-attribute>
+	  	<put-attribute name="menu" value=""> </put-attribute>
+	  	<put-list-attribute name="javascripts" inherit="true">
+	  	<add-attribute value="/resources/styles/js/angular-1.4.8/js/angularBook.js"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="createBook" extends="DefaultTemplate">
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/Book/create.jsp"></put-attribute>
+	  	<put-attribute name="menu" value=""> </put-attribute>
+	  	<put-list-attribute name="javascripts" inherit="true">
+	  	<add-attribute value="/resources/styles/js/angular-1.4.8/js/angularBook.js"></add-attribute>
+		</put-list-attribute>
+	</definition>
+	
+	
+		<definition name="bookOrderList" extends="DefaultTemplate">
+	  	<put-attribute name="body" value="/WEB-INF/pages/jsp/BookOrder/List.jsp"></put-attribute>
+	  	<put-attribute name="menu" value=""> </put-attribute>
+	  	<put-list-attribute name="javascripts" inherit="true">
+	  	<add-attribute value="/resources/styles/js/angular-1.4.8/js/angularBookOrder.js"></add-attribute>
+		</put-list-attribute>
+	</definition>
+
+</tiles-definitions>

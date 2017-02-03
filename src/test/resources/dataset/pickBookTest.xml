@@ -1,0 +1,15 @@
+<dataset>
+
+	<user user_id="4" user_username="Dogo" user_password="Dogo"
+		user_name="Daniel" />
+		
+	<book_order book_order_id = "1"  user_id = "4" />
+		
+	<book book_id="10" book_name="Jary" book_author="Chuy"
+		book_editor="UABC" book_lng="Spanish" book_status="YES" book_year="1900" />
+	
+	<pick_book pick_book_id = "1" book_order_id = "1" book_id = "10"/>
+
+
+
+</dataset>
