@@ -5,13 +5,15 @@
 
 
 <div data-ng-controller = "userAppController" data-ng-init="getUsers()">
-	<h3 style="color: blue; font-family: sans-serif;">User List:</h3>
-		
-	<a href="<c:url value="/User/create?status="/>">Add User</a>
-	<a href="<c:url value="/User/home"/>">Return to Index</a>
-	<br/><br/>
-
-	<table class ="table">
+<div class="panel panel-default">
+		<div class="panel-heading">
+			<ol class="breadcrumb">
+				<li><a href="<c:url value="/home"/>">Home</a></li>
+				<li class="active">Book List</li>
+			</ol>
+		</div>
+		<div class="panel-body">
+			<table class="table">
 				<thead>
 					<tr>
 						<th>ID</th>
@@ -34,4 +36,6 @@
                 </div>
 
             </div>
+            </div>
 	</div>
+</div>

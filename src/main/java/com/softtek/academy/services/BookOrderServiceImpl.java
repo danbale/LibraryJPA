@@ -18,7 +18,7 @@ public class BookOrderServiceImpl implements BookOrderService{
 
 	@Override
 	public List<BookOrderEntity> getAllBookOrders() {
-		return bookOrderRepository.findAll();
+		return bookOrderRepository.getAllBookOrders();
 	}
 
 	@Override

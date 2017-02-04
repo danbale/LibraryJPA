@@ -17,16 +17,21 @@ public class UserServiceImpl implements UserService{
 	@Autowired
 	UserRepository userRepository;
 
+	
+	//Find all users from the database
 	@Override
 	public List<UserEntity> getAllUsers() {
 		return userRepository.findAll();
 	}
 
+	
+	//Find one user by the ID
 	@Override
 	public UserEntity getUserById(Long id) {
 		return userRepository.findOne(id);
 	}
 
+	// Create one user on the database
 	@Override
 	public void createUser(UserEntity user) {
 		userRepository.save(user);
@@ -43,6 +48,8 @@ public class UserServiceImpl implements UserService{
 		userRepository.delete(user);	
 	}
 
+	
+	// Find one user using the username
 	@Override
 	public UserEntity getUserByUsername(String username) {
 		try {

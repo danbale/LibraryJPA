@@ -14,11 +14,14 @@ public class OrderServiceImpl implements OrderService{
 	@Autowired
 	OrderRepository orderRepository;
 
+	
+	// This function get all the orders from the database
 	@Override
 	public List<OrderEntity> getAllOrders() {
 		return orderRepository.findAll();
 	}
-
+	
+	// This function get one order by the id
 	@Override
 	public OrderEntity getOrderById(Long id) {
 		return orderRepository.findOne(id);

@@ -1,6 +1,7 @@
 package com.softtek.academy.domain;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +15,7 @@ import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Table(name = "user")
-public class UserEntity extends Audit implements Serializable {
+public class UserEntity  implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -36,6 +37,11 @@ public class UserEntity extends Audit implements Serializable {
 	@Column(name = "user_name")
 	private String name;
 	
+	@Column(name = "created_date")
+	private Date createDate;
+	
+	@Column(name = "modified_date")
+	private Date modifiedDate;
 	
 	public UserEntity(){
 		super();
@@ -96,6 +102,30 @@ public class UserEntity extends Audit implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+
+
+
+	public Date getModifiedDate() {
+		return modifiedDate;
+	}
+
+
+
+	public void setModifiedDate(Date modifiedDate) {
+		this.modifiedDate = modifiedDate;
 	}
 
 

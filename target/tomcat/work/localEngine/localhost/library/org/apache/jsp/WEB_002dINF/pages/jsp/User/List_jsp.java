@@ -61,19 +61,18 @@ public final class List_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<div data-ng-controller = \"userAppController\" data-ng-init=\"getUsers()\">\n");
-      out.write("\t<h3 style=\"color: blue; font-family: sans-serif;\">User List:</h3>\n");
-      out.write("\t\t\n");
-      out.write("\t<a href=\"");
+      out.write("<div class=\"panel panel-default\">\n");
+      out.write("\t\t<div class=\"panel-heading\">\n");
+      out.write("\t\t\t<ol class=\"breadcrumb\">\n");
+      out.write("\t\t\t\t<li><a href=\"");
       if (_jspx_meth_c_005furl_005f0(_jspx_page_context))
         return;
-      out.write("\">Add User</a>\n");
-      out.write("\t<a href=\"");
-      if (_jspx_meth_c_005furl_005f1(_jspx_page_context))
-        return;
-      out.write("\">Return to Index</a>\n");
-      out.write("\t<br/><br/>\n");
-      out.write("\n");
-      out.write("\t<table class =\"table\">\n");
+      out.write("\">Home</a></li>\n");
+      out.write("\t\t\t\t<li class=\"active\">Book List</li>\n");
+      out.write("\t\t\t</ol>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<div class=\"panel-body\">\n");
+      out.write("\t\t\t<table class=\"table\">\n");
       out.write("\t\t\t\t<thead>\n");
       out.write("\t\t\t\t\t<tr>\n");
       out.write("\t\t\t\t\t\t<th>ID</th>\n");
@@ -96,7 +95,9 @@ public final class List_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </div>\n");
       out.write("\n");
       out.write("            </div>\n");
-      out.write("\t</div>");
+      out.write("            </div>\n");
+      out.write("\t</div>\n");
+      out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -117,33 +118,14 @@ public final class List_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f0 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f0.setParent(null);
-    // /WEB-INF/pages/jsp/User/List.jsp(10,10) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005furl_005f0.setValue("/User/create?status=");
+    // /WEB-INF/pages/jsp/User/List.jsp(11,17) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005furl_005f0.setValue("/home");
     int _jspx_eval_c_005furl_005f0 = _jspx_th_c_005furl_005f0.doStartTag();
     if (_jspx_th_c_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f0);
       return true;
     }
     _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f0);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005furl_005f1(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:url
-    org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f1 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
-    _jspx_th_c_005furl_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_c_005furl_005f1.setParent(null);
-    // /WEB-INF/pages/jsp/User/List.jsp(11,10) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005furl_005f1.setValue("/User/home");
-    int _jspx_eval_c_005furl_005f1 = _jspx_th_c_005furl_005f1.doStartTag();
-    if (_jspx_th_c_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f1);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f1);
     return false;
   }
 }

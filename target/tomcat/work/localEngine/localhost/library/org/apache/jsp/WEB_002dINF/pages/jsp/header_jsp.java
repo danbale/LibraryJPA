@@ -87,6 +87,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n");
       out.write("          <ul class=\"nav navbar-nav\">\n");
       out.write("            <li class=\"\"><a href=\"/library/home\">Home</a></li>\n");
+      out.write("            <li class=\"\"><a href=\"/library/login\">Login</a></li>\n");
       out.write("            <li class=\"dropdown\">\n");
       out.write("              <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Menu <span class=\"caret\"></span></a>\n");
       out.write("              <ul class=\"dropdown-menu\">\n");
@@ -101,7 +102,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <li><a href=\"/library/User/List\">List</a></li>\n");
       out.write("                <li><a href=\"/library/User/create\">Add</a></li>\n");
       out.write("                \n");
-      out.write("                <li class=\"\"><a href=\"/library/login\">Login</a></li>\n");
+      out.write("                \n");
       out.write("              </ul>\n");
       out.write("            </li>\n");
       out.write("          </ul>\n");

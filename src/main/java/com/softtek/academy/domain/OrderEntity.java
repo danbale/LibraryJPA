@@ -1,6 +1,7 @@
 package com.softtek.academy.domain;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -12,12 +13,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
-
 @Entity
 @Table(name = "order")
-public class OrderEntity extends Audit implements Serializable{
+public class OrderEntity  implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
@@ -27,10 +25,14 @@ public class OrderEntity extends Audit implements Serializable{
 	private Long id;
 
 	@ManyToOne(cascade = CascadeType.ALL)
-	@OnDelete(action = OnDeleteAction.CASCADE)
 	@JoinColumn(name = "user_id")
 	private UserEntity user;
 	
+	@Column(name = "created_date")
+	private Date createDate;
+	
+	@Column(name = "modified_date")
+	private Date modifiedDate;
 	
 	@Override
 	public String toString() {
@@ -84,6 +86,27 @@ public class OrderEntity extends Audit implements Serializable{
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	
+	
+	
+	
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+
+	public Date getModifiedDate() {
+		return modifiedDate;
+	}
+
+	public void setModifiedDate(Date modifiedDate) {
+		this.modifiedDate = modifiedDate;
 	}
 
 	public UserEntity getUser() {

@@ -28,6 +28,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class=""><a href="/library/home">Home</a></li>
+            <li class=""><a href="/library/login">Login</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -42,7 +43,7 @@
                 <li><a href="/library/User/List">List</a></li>
                 <li><a href="/library/User/create">Add</a></li>
                 
-                <li class=""><a href="/library/login">Login</a></li>
+                
               </ul>
             </li>
           </ul>

@@ -10,7 +10,7 @@ import com.softtek.academy.domain.BookEntity;
 @Repository
 public interface BookRepository extends JpaRepository<BookEntity, Long>{
 
-	
+	// This function is used to update one BookEntity object
 	@Query(name="updateBook", nativeQuery=true)
 	public boolean updateBook(@Param ("name") String name,
 							  @Param("genre") String genre,
@@ -22,6 +22,7 @@ public interface BookRepository extends JpaRepository<BookEntity, Long>{
 							  @Param("bookId")Long id);
 	
 	
+	// This function is used to find one book in the database using the id
 	@Query(name="findOneBook", nativeQuery=true)
 	public BookEntity findOneBook(@Param ("id") Long id);
 
